@@ -1,0 +1,19 @@
+[project]
+name = "cube-sim"
+version = "0.1.0"
+description = "Coupled geometric resonance and eight-phase oscillation simulator"
+authors = [{name = "CubeCode"}]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+notebook = [
+    "matplotlib",
+    "jupyter",
+]
+
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
